@@ -22,27 +22,27 @@ function App() {
   }, [])
 
     return (
+      <>
     <div className="App">
+      <div id="intro">
       <h1 id="header">Welcome to JEOPARDY!</h1>
+      </div>
       <h3 class="mainText">Score: </h3>
       <h3 class="mainText">Let's Play!</h3>
-    <div>
+      <button>Random Trivia Question</button>
+    <div id="mainGame" className="container">
       {question.map(question => (
         <div key={question.id}>
-          <h2>{question.category.title}</h2>
-          <h3>{question.question}</h3>
-          <h4>{question.answer}</h4>
+          <h2>Category: {question.category.title}</h2>
+          <h3>Question: {question.question}</h3>
+          <h3>Answer: {question.answer}</h3>
       </div>))}
     </div>
-
-    <button>Random Trivia Question</button>
-    <div class="container mainText">
-      Category
-      <br />Points<br />Question<br />
       <div id="answerReveal">Click to Reveal Answer</div>
-      <div id="revealed" >Revealed Answer</div>
+      <div id="revealed"><h4>Revealed Answer</h4></div>
     </div>
-    </div>
+    <div><a href="https://www.freepik.com/free-vector/led-wall-video-screen-with-glowing-dot-lights_9395692.htm#query=quiz%20show&position=2&from_view=keyword">Image by upklyak</a> on Freepik</div>
+    </>
   );
 }
 

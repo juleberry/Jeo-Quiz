@@ -1,0 +1,59 @@
+body {
+  text-align: center;
+  background-color: #89CFF0;
+  color: #000080;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#header {
+  color: white;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 3rem;
+  letter-spacing: 2px;
+}
+
+button {
+  margin: 1rem;
+  padding: 1rem;
+  border: 2px solid black;
+  border-radius: 5px;
+}
+
+.mainText {
+  color: #000080;
+}
+
+.container {
+  color: #000080;
+  width: 60%;
+}
+
+#mainGame {
+  margin-bottom: 1rem;
+}
+
+#answerReveal {
+  background-color: yellow;
+  height: 50px;
+  width: 75%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#revealed {
+  background-color: darkblue;
+  height: 50px;
+  width: 75%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: white;
+  font-weight: bold;
+}
