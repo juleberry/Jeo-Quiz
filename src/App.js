@@ -49,7 +49,8 @@ function App() {
 
           <div id="questionArea">
           <h4>Category: <span id="categoryTitle">{question.category.title}</span></h4>
-          <p>Question: {question.question}</p>
+          <div id="questionBox">
+          {question.question}</div>
           </div>
           <div id="answerReveal" onClick={() => {
             const ansBtn = document.getElementById('answerReveal')
