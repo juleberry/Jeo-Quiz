@@ -30,7 +30,7 @@ function App() {
       </div>
 
       <main className="mainText">Let's Play!<br />Click "Random Trivia Question" for a new question</main>
-      <button onClick={() => {
+      <button id="randomBtn" onClick={() => {
         getQuestion()
         const ansBtn = document.getElementById('answerReveal')
         const showAns = document.getElementById("answerBox")
@@ -52,8 +52,9 @@ function App() {
           
           <p>
             <h2>Score: <span className="gameTitle">0</span></h2><br />
-              <button id="wrongAnsBtn">-</button>
-              <button id="correctAnsBtn">+</button>
+              <button id="wrongAnsBtn" className='scoreBtns'>-</button>
+              <button id="correctAnsBtn" className='scoreBtns'>+</button>
+              <button id="resetBtn" className='scoreBtns'>Reset</button>
           </p>
           </div>
 

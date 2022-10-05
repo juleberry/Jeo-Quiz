@@ -37,6 +37,14 @@ h1, h2, h3, h4, h5 {
 button {
   color: #000080;
   background-color: rgb(255, 179, 0);
+  font-weight: bold;
+  border: 2px solid rgb(113, 113, 113);
+  border-radius: 3px;
+}
+
+#randomBtn {
+  color: #000080;
+  background-color: rgb(255, 179, 0);
   letter-spacing: 1px;
   font-weight: bold;
   text-transform: uppercase;
@@ -46,12 +54,17 @@ button {
   height: 5%;
 }
 
+.scoreBtns {
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+  border: 2px solid rgb(113, 113, 113);
+  padding: 1rem;
+}
+
 #wrongAnsBtn {
   background-color: rgb(174, 7, 7);
   color: rgb(240, 236, 5);
-  font-weight: bold;
-  text-align: center;
-  border: 2px solid rgb(113, 113, 113);
   margin-right: .5rem;
   height: 5vh;
   width: 5vw;
@@ -60,9 +73,16 @@ button {
 #correctAnsBtn {
   background-color: rgb(10, 99, 10);
   color: rgb(240, 236, 5);
-  border: 2px solid rgb(113, 113, 113);
-  margin-left: .5rem;
   height: 5vh;
+  width: 5vw;
+}
+
+#resetBtn {
+  height: 2vh;
+  width: 8vw;
+  border: 2px solid rgb(113, 113, 113);
+  margin-top: .25rem;
+  margin-left: .5rem;
 }
 
 .mainText {
@@ -93,6 +113,7 @@ button {
   /* font-weight: bold; */
   display: flex;
   flex-wrap: wrap;
+  flex-direction: column;
   justify-content: space-around;
   align-items: center;
 }
