@@ -29,8 +29,7 @@ function App() {
       <h1 id="header">Welcome to JEOPARDY!</h1>
       </div>
 
-      {/* <h3 className="mainText">Score: </h3> */}
-      <p className="mainText">Let's Play!<br />Click "Random Trivia Question" for a new question</p>
+      <main className="mainText">Let's Play!<br />Click "Random Trivia Question" for a new question</main>
       <button onClick={() => {
         getQuestion()
         const ansBtn = document.getElementById('answerReveal')
@@ -46,9 +45,22 @@ function App() {
         <div key={question.id}>
 
           <div id="questionArea">
-          <p>Category:<br /><span id="categoryTitle">{question.category.title}</span></p>
+          <p>
+            <h2>Category:</h2><br />
+            <span className="gameTitle">{question.category.title}</span>
+            </p>
+          
+          <p>
+            <h2>Score: <span className="gameTitle">0</span></h2><br />
+              <button id="wrongAnsBtn">-</button>
+              <button id="correctAnsBtn">+</button>
+          </p>
+          </div>
 
           <div id="questionBox">
+          <p>
+            <h4>Value: <span className="gameTitle">{question.value}</span></h4>
+          </p>
           <div>{question.question}
           </div>
 
@@ -58,14 +70,14 @@ function App() {
             showAns.classList.remove('hidden')
             ansBtn.classList.add('hidden')
             console.log('reveal was clicked')
-          }}><h3>Click to Reveal Answer</h3>
+          }}><h3>Reveal Answer</h3>
           </div>
           <div id="answerBox" className="hidden">
             {/* some answers have additional html in them; a possible fix would be to check answer for carat tags to determine if answer can generated as is or injected as html content */}
             <span id="answer">Answer:<br /> {question.answer}</span>
         </div>
       </div>
-          </div>
+          
       </div>))}
     </div>
     </div>

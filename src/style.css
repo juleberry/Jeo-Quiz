@@ -5,6 +5,11 @@ body {
   width: 100vw;
 }
 
+h1, h2, h3, h4, h5 {
+  margin: 0;
+  padding: 0;
+}
+
 .App {
   display: flex;
   flex-direction: column;
@@ -41,17 +46,37 @@ button {
   height: 5%;
 }
 
+#wrongAnsBtn {
+  background-color: rgb(174, 7, 7);
+  color: rgb(240, 236, 5);
+  font-weight: bold;
+  text-align: center;
+  border: 2px solid rgb(113, 113, 113);
+  margin-right: .5rem;
+  height: 5vh;
+  width: 5vw;
+}
+
+#correctAnsBtn {
+  background-color: rgb(10, 99, 10);
+  color: rgb(240, 236, 5);
+  border: 2px solid rgb(113, 113, 113);
+  margin-left: .5rem;
+  height: 5vh;
+}
+
 .mainText {
   color: #000080;
+  margin: 1rem;
 }
 
 #questionArea {
   font-weight: bold;
   width: 100%;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
 }
 
 #questionBox {
@@ -60,7 +85,7 @@ button {
   border: 4px solid rgb(113, 113, 113);
   border-radius: 5px;
   padding: 1rem;
-  width: 70vw;
+  width: 60vw;
   font-size: large;
   overflow: auto;
   height: 40vh;
@@ -74,12 +99,12 @@ button {
 
 #answerReveal {
   color: #5a5151;
-  font-size: small;
+  font-size: smaller;
   background-color: rgb(255, 179, 0);
   border: 2px solid rgb(216, 211, 211);
   border-radius: 2px;
   height: auto;
-  width: 35%;
+  width: 40%;
 }
 
 #answer {
@@ -93,9 +118,9 @@ button {
   font-weight: bold;
 }
 
-#categoryTitle {
+.gameTitle {
   text-transform: capitalize;
-  font-size: 1.5rem;
+  font-size: 1.25rem;
 }
 
 .hidden {
