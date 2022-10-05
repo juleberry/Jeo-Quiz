@@ -1,10 +1,8 @@
 body {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: nowrap;
-  /* background-color: #89CFF0; */
-  background-color: rgb(247, 223, 178);
+  background-color: rgb(106, 177, 235);
   color: #000080;
+  height: 100vh;
+  width: 100vw;
 }
 
 .App {
@@ -12,6 +10,8 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  text-align: center;
+  color: #000080;
 }
 
 #header {
@@ -21,65 +21,70 @@ body {
   letter-spacing: 2px;
 }
 
+#mainGame {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* "random question" */
 button {
-  margin: 1rem;
+  color: #000080;
+  background-color: rgb(255, 179, 0);
+  letter-spacing: 1px;
+  font-weight: bold;
+  text-transform: uppercase;
   padding: 1rem;
-  border: 2px solid black;
-  border-radius: 5px;
+  border: 2px solid rgb(113, 113, 113);
+  border-radius: 3px;
+  height: 5%;
 }
 
 .mainText {
   color: #000080;
 }
 
-.container {
-  color: #000080;
-  width: 95%;
-}
-
-#mainGame {
-  margin-bottom: 1rem;
-}
-
 #questionArea {
+  font-weight: bold;
   width: 100%;
-  margin: 1.5rem;
   display: flex;
   flex-direction: column;
+  align-items: center;
   justify-content: center;
 }
 
 #questionBox {
   background-color: #000080;
   color: white;
-  border: 4px solid lightgray;
+  border: 4px solid rgb(113, 113, 113);
   border-radius: 5px;
   padding: 1rem;
-  width: 75%;
-  font-size: x-large;
+  width: 70vw;
+  font-size: large;
   overflow: auto;
-  height: 30vh;
+  height: 40vh;
   text-transform: uppercase;
   /* font-weight: bold; */
-  margin: .5rem;
   display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-#answerReveal {
-  background-color: yellow;
-  height: 50px;
-  width: 75%;
-  display: flex;
+  flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
 }
 
+#answerReveal {
+  color: #5a5151;
+  font-size: small;
+  background-color: rgb(255, 179, 0);
+  border: 2px solid rgb(216, 211, 211);
+  border-radius: 2px;
+  height: auto;
+  width: 35%;
+}
+
 #answer {
-  font-size: 1.5rem;
+  font-size: 1rem;
   font-weight: bold;
-  padding-top: 1rem;
 }
 
 #revealed {
@@ -90,6 +95,7 @@ button {
 
 #categoryTitle {
   text-transform: capitalize;
+  font-size: 1.5rem;
 }
 
 .hidden {

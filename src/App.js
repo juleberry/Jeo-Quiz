@@ -30,8 +30,7 @@ function App() {
       </div>
 
       {/* <h3 className="mainText">Score: </h3> */}
-      <h3 className="mainText">Let's Play!</h3>
-
+      <p className="mainText">Let's Play!<br />Click "Random Trivia Question" for a new question</p>
       <button onClick={() => {
         getQuestion()
         const ansBtn = document.getElementById('answerReveal')
@@ -41,17 +40,18 @@ function App() {
         console.log('random was clicked')
       }}>Random Trivia Question</button>
 
-    <div id="mainGame" className="container">
+    <div id="mainGame">
 
       {question.map(question => (
         <div key={question.id}>
 
-
           <div id="questionArea">
-          <h4>Category: <span id="categoryTitle">{question.category.title}</span></h4>
+          <p>Category:<br /><span id="categoryTitle">{question.category.title}</span></p>
+
           <div id="questionBox">
-          {question.question}</div>
+          <div>{question.question}
           </div>
+
           <div id="answerReveal" onClick={() => {
             const ansBtn = document.getElementById('answerReveal')
             const showAns = document.getElementById("answerBox")
@@ -62,10 +62,9 @@ function App() {
           </div>
           <div id="answerBox" className="hidden">
             {/* some answers have additional html in them; a possible fix would be to check answer for carat tags to determine if answer can generated as is or injected as html content */}
-            <span id="answer">Answer: {question.answer}</span>
-
-
-            <p>Click "Random Trivia Question" for another question</p>
+            <span id="answer">Answer:<br /> {question.answer}</span>
+        </div>
+      </div>
           </div>
       </div>))}
     </div>
