@@ -1,6 +1,7 @@
 import './style.css'
 import './App.css';
 import { useState, useEffect } from 'react'
+import Score from './Score'
 
 function App() {
 
@@ -20,6 +21,7 @@ function App() {
   useEffect(() => {
     getQuestion()
   }, [])
+
 
     return (
       <>
@@ -42,26 +44,26 @@ function App() {
     <div id="mainGame">
 
       {question.map(question => (
+    
         <div key={question.id}>
 
           <div id="questionArea">
-          <p>
+          <div>
             <h2>Category:</h2><br />
             <span className="gameTitle">{question.category.title}</span>
-            </p>
+            </div>
           
-          <p>
-            <h2>Score: <span className="gameTitle">0</span></h2><br />
-              <button id="wrongAnsBtn" className='scoreBtns'>-</button>
-              <button id="correctAnsBtn" className='scoreBtns'>+</button>
-              <button id="resetBtn" className='scoreBtns'>Reset</button>
-          </p>
+          <div id="scoreArea">
+            {/* <h2>Score: 0</h2> */}
+            <Score />
+          </div>
           </div>
 
           <div id="questionBox">
-          <p>
-            <h4>Value: <span className="gameTitle">{question.value}</span></h4>
-          </p>
+          <div>
+            {/* initial functionality will increase/decrease score by 100 */}
+            <h4>Value: <span className="gameTitle" id="questionValue">{question.value}</span></h4>
+          </div>
           <div>{question.question}
           </div>
 
