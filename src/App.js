@@ -54,7 +54,6 @@ function App() {
             </div>
           
           <div id="scoreArea">
-            {/* <h2>Score: 0</h2> */}
             <Score />
           </div>
           </div>
