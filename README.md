@@ -2,6 +2,12 @@
 ### (app created using JService API)
 ### [Netlify Live Link] https://jeoquiz-wk10dy3.netlify.app/
 
+(Updated Styling, November 15, 2022)
+
+<img width="479" alt="jeoQ_screenshot2" src="https://user-images.githubusercontent.com/105573843/201996061-fde84841-d59f-4401-b7ea-beb8bb4de3db.png">
+
+(Old Styling)
+
 <img width="565" alt="jeoQuiz_screenshot" src="https://user-images.githubusercontent.com/105573843/199322655-5854f4b9-3608-4594-91a3-4c0bee943b65.png">
 
 ### Gameplay:
