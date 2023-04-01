@@ -1,6 +1,6 @@
 # Jeo-Quiz
 ### (app created using JService API)
-### [Netlify Live Link] https://jeoquiz-wk10dy3.netlify.app/
+### [Netlify Live Link] https://jeoquiz.netlify.app/
 
 ### Gameplay:
 Click "Reveal Random Question" to reveal a random question from the JService API then click "Reveal Answer" to see if you guessed correctly.
