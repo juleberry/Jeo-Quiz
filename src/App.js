@@ -33,7 +33,7 @@ function App() {
     <>
       <div className="App">
         <div id="intro">
-          <h1 id="header">Welcome to JEOPARDY!</h1>
+          <h1 id="header">JEO QUIZ</h1>
         </div>
 
         <main className="mainText">
